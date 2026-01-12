@@ -1,6 +1,6 @@
 allowedUsers = {
     ----------///// DONOS-SUB-DONOS /////------------           
-    ["kaelixofc"]         = true,
+    [""]         = true,
 
     ----------///// TIK-TOK /////------------           
     [""]         = true,
@@ -18,3 +18,4 @@ allowedUsers = {
 
 
 return allowedUsers
+
