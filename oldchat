@@ -1,0 +1,27 @@
+local Players = game:GetService("Players")
+local UIS = game:GetService("UserInputService")
+
+local player = Players.LocalPlayer
+local gui = Instance.new("ScreenGui")
+gui.Parent = player:WaitForChild("PlayerGui")
+
+local image = Instance.new("ImageLabel")
+image.Parent = gui
+image.Size = UDim2.fromOffset(40, 40)
+image.Position = UDim2.fromOffset(200, 200)
+image.BackgroundTransparency = 1
+image.Image = "rbxassetid://97579528159180"
+
+-- Faz a imagem seguir o dedo / mouse
+UIS.InputChanged:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.Touch
+	or input.UserInputType == Enum.UserInputType.MouseMovement then
+		
+		local pos = input.Position
+		
+		image.Position = UDim2.fromOffset(
+			pos.X - image.AbsoluteSize.X / 2,
+			pos.Y - image.AbsoluteSize.Y / 2
+		)
+	end
+end)
