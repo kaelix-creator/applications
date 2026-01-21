@@ -5288,14 +5288,14 @@ local function C_5()
 
 		local Hint = [[
 			local hint = Instance.new("Hint", game.Workspace)
-			hint.Text = "Game Backdoored by Moon Hun Exe !! gg/YxgmRKCx2T | Kaelix is here Son of a bitch "
+			hint.Text = "Game Backdoored by Moon Hub Exe !! gg/YxgmRKCx2T | Kaelix is here Son of a bitch "
 			
 			while true do
 				wait(5)
 				hint:Destroy()
 				wait(5)
 				local hint = Instance.new("Hint", game.Workspace)
-				hint.Text = "Game Backdoored by Moon Hun Exe !! gg/YxgmRKCx2T | Kaelix is here Son of a bitch "
+				hint.Text = "Game Backdoored by Moon Hub Exe !! gg/YxgmRKCx2T | Kaelix is here Son of a bitch "
 			end
 			]]
 
@@ -6020,5 +6020,6 @@ local function C_37()
 	end)
 end;
 task.spawn(C_37);
+
 
 return G2L["1"], require;
